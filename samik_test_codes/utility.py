@@ -10,6 +10,8 @@ import numpy as np
 from openmm import unit, Vec3
 from openmm.app import Modeller, Topology, ForceField, element
 
+### Make sure to use a gravitational force (external) to replace the periodic boundary
+
 # ---------- helpers ----------
 def cube_vectors(L_nm: float):
     """Return cubic box vectors of edge length L_nm (nanometers)."""
